@@ -35,3 +35,12 @@ The frontend is `index.html`, `styles.css`, and `app.js`. `server.py` serves the
 ## Safety and scope
 
 The readings and scenarios are fictional; their values are **not validated safety thresholds**. The app has no PLC, sensor, actuator, production network, or safety certification. Acknowledging an event records a review; it does not clear a physical fault or send a machine command. The assistant cannot control hardware. This demo has no production user authentication.
+## Component map
+
+| Component | Responsibility |
+|---|---|
+| `index.html`, `styles.css`, `app.js` | Browser dashboard and operator interactions |
+| `server.py` | Standard-library HTTP API and simulation logic |
+| SQLite | Demo assets, events, acknowledgements, and settings |
+
+The demo uses Python's standard library and needs no package installation. Its readings and guidance are simulated; it has no connection to physical equipment.
